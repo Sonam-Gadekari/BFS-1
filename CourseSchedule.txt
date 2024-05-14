@@ -1,5 +1,5 @@
-Time Complexity: O(n)
-Space Complexity: O(n)
+Time Complexity: O(V+E)--> For each vertex we are not going over all the edges, we are going over only adjacent edges.
+Space Complexity: O(V)+O(E)--> O(V) for indegrees array and O(E) for map
 Challenge: Use Queue instead of an arraylist
 Approach: Followed Topological sorting technique.
 Step1: Find the incoming nodes for each node. Maintain indegree array for all incoming nodes.
